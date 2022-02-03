@@ -34,6 +34,7 @@ public class MySpaceSteps {
 	public void user_is_on_my_space_page() {
 	    String title = mySpacePage.getMySpacePageTitle();
 	    System.out.println("Page title is " + title);
+	    System.out.println("Just checking github");
 	}
 
 	@Then("user gets account section")
