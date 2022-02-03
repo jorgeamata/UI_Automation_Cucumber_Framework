@@ -1,0 +1,1049 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">ene. 31, 2022 01:09:31 p. m.</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login page feature</p>
+            <p class="text-sm">
+              <span>13:09:32</span> / <span>00:00:52:180</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login page feature</h5>
+<span class='badge badge-success'>01.31.2022 13:09:32</span>
+<span class='badge badge-danger'>01.31.2022 13:10:24</span>
+<span class='badge badge-default'>00:00:52:180</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login page title</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.user_gets_the_title_of_the_page()">
+                <span>When user gets the title of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.page_title_should_be(java.lang.String)">
+                <span>Then page title should be "Mi Espacio"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Forgot Password link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.olvidaste_tu_contraseña_link_should_be_displayed()">
+                <span>Then ¿Olvidaste tu contraseña? link should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.user_enters_username(java.lang.String)">
+                <span>When user enters username "anaphdz"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.user_enters_password(java.lang.String)">
+                <span>And user enters password "123hernandez"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.user_clicks_on_login_button()">
+                <span>And user clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.user_gets_the_title_of_the_page()">
+                <span>Then user gets the title of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.page_title_should_be(java.lang.String)">
+                <span>And page title should be "Mi Espacio"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Space Page Feature</p>
+            <p class="text-sm">
+              <span>13:10:24</span> / <span>00:02:40:377</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Space Page Feature</h5>
+<span class='badge badge-success'>01.31.2022 13:10:24</span>
+<span class='badge badge-danger'>01.31.2022 13:13:04</span>
+<span class='badge badge-default'>00:02:40:377</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log fail-bg mr-2">Fail</span>Space page title</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.MySpaceSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+                <span>Given user has already logged in to application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>anaphdz</td><td>123hernandez</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.MySpaceSteps.user_is_on_my_space_page()">
+                <span>Given user is on My Space page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=97.0.4692.99)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'STFMXC1617', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a4b1b8cced105f47d00cf5d0ce95ab52, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\jalopez5\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63538}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63538/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4b1b8cced105f47d00cf5d0ce95ab52
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:317)
+	at com.pages.MySpacePage.getMySpacePageTitle(MySpacePage.java:25)
+	at stepdefinitions.MySpaceSteps.user_is_on_my_space_page(MySpaceSteps.java:35)
+	at ✽.user is on My Space page(file:///C:/Users/jalopez5/eclipse-workspace/CucumberFramework/src/test/resources/features/MySpace.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.LoginSteps.user_gets_the_title_of_the_page()">
+                <span>When user gets the title of the page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.LoginSteps.page_title_should_be(java.lang.String)">
+                <span>Then page title should be "Mi Espacio"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=97.0.4692.99)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'STFMXC1617', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a4b1b8cced105f47d00cf5d0ce95ab52, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\jalopez5\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63538}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63538/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4b1b8cced105f47d00cf5d0ce95ab52
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:333)
+	at AppHooks.ApplicationHooks.tearDown(ApplicationHooks.java:47)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="38"><span class="badge log fail-bg mr-2">Fail</span>My Space section count</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.MySpaceSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+                <span>Given user has already logged in to application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>anaphdz</td><td>123hernandez</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MySpaceSteps.user_is_on_my_space_page()">
+                <span>Given user is on My Space page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.MySpaceSteps.user_gets_account_section(io.cucumber.datatable.DataTable)">
+                <span>Then user gets account section</span>
+      <div><table class='markup-table table '><tr><td>Consulta tu recibo</td></tr><tr><td>Administrar mis recibos</td></tr><tr><td>Pagar</td></tr></table>
+      </div>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected:<[Consulta tu recibo, Administrar mis recibos, Pagar]> but was:<[Hola, anaphdz
+Cerrar sesión
+Inicio Consultar Recibo
+ADMINISTRAR MI CUENTA
+Cambiar mi contraseña
+Cambiar mi correo electrónico
+Administrar mis recibos
+Administrar nombres cortos de servicios
+Cambiar mi servicio primario
+Eliminar mi cuenta
+TRÁMITES Y SERVICIOS
+Descarga Múltiple
+Avisar fallas de luz
+Aclaración de mi recibo
+Revisión de mi medidor
+Incremento de carga
+Modificación de instalaciones existentes de la CFE
+Solicitar una libranza
+Consulta una solicitud
+Contáctanos
+CONSULTA TU RECIBO
+Actual e histórico, paga y domicilia
+ADMINISTRAR MIS RECIBOS
+Agrega recibos y recibe facturación electrónica
+PAGAR
+Realiza el pago de tu recibo de energía eléctrica
+MATA GARCIA JORGE
+HITA 900 1 ENTRE ESQ GUERNICA y 2DO. SECTOR CP. 66636 LAS PRADERAS DE APDCA APODACA N.L. N.L.
+MI ESPACIO CFECONTIGO
+ Servicio - 377930304481
+ Servicio - 377930406445
+ Servicio - 377980415178
+Monto a pagar por el período
+$9424
+Período de consumo:
+12 NOV 21 al 12 ENE 22
+Número de servicio:
+377 980 415 178
+Fecha límite de pago:
+28 ENE 22
+Estado del recibo:
+PAGADO
+  Pdf Otras Facturas
+ENE 2022
+Ver más...
+NOV 2021
+Ver más...
+SEP 2021
+Ver más...
+JUL 2021
+Ver más...
+MAY 2021
+Ver más...
+MAR 2021
+Ver más...
+Información importante
+- Corte a partir de 29 ENE 22.
+Gráfica Comparativa
+Mes de facturacion
+kWh, Hola, anaphdz
+Cerrar sesión
+Inicio Consultar Recibo
+ADMINISTRAR MI CUENTA
+Cambiar mi contraseña
+Cambiar mi correo electrónico
+Administrar mis recibos
+Administrar nombres cortos de servicios
+Cambiar mi servicio primario
+Eliminar mi cuenta
+TRÁMITES Y SERVICIOS
+Descarga Múltiple
+Avisar fallas de luz
+Aclaración de mi recibo
+Revisión de mi medidor
+Incremento de carga
+Modificación de instalaciones existentes de la CFE
+Solicitar una libranza
+Consulta una solicitud
+Contáctanos
+CONSULTA TU RECIBO
+Actual e histórico, paga y domicilia
+ADMINISTRAR MIS RECIBOS
+Agrega recibos y recibe facturación electrónica
+PAGAR
+Realiza el pago de tu recibo de energía eléctrica
+MATA GARCIA JORGE
+HITA 900 1 ENTRE ESQ GUERNICA y 2DO. SECTOR CP. 66636 LAS PRADERAS DE APDCA APODACA N.L. N.L.
+MI ESPACIO CFECONTIGO
+ Servicio - 377930304481
+ Servicio - 377930406445
+ Servicio - 377980415178
+Monto a pagar por el período
+$9424
+Período de consumo:
+12 NOV 21 al 12 ENE 22
+Número de servicio:
+377 980 415 178
+Fecha límite de pago:
+28 ENE 22
+Estado del recibo:
+PAGADO
+  Pdf Otras Facturas
+ENE 2022
+Ver más...
+NOV 2021
+Ver más...
+SEP 2021
+Ver más...
+JUL 2021
+Ver más...
+MAY 2021
+Ver más...
+MAR 2021
+Ver más...
+Información importante
+- Corte a partir de 29 ENE 22.
+Gráfica Comparativa
+Mes de facturacion
+kWh, Hola, anaphdz
+Cerrar sesión
+Inicio Consultar Recibo
+ADMINISTRAR MI CUENTA
+Cambiar mi contraseña
+Cambiar mi correo electrónico
+Administrar mis recibos
+Administrar nombres cortos de servicios
+Cambiar mi servicio primario
+Eliminar mi cuenta
+TRÁMITES Y SERVICIOS
+Descarga Múltiple
+Avisar fallas de luz
+Aclaración de mi recibo
+Revisión de mi medidor
+Incremento de carga
+Modificación de instalaciones existentes de la CFE
+Solicitar una libranza
+Consulta una solicitud
+Contáctanos, Hola, anaphdz
+Cerrar sesión
+Inicio Consultar Recibo, Hola, anaphdz
+Cerrar sesión
+Inicio Consultar Recibo, ADMINISTRAR MI CUENTA
+Cambiar mi contraseña
+Cambiar mi correo electrónico
+Administrar mis recibos
+Administrar nombres cortos de servicios
+Cambiar mi servicio primario
+Eliminar mi cuenta, ADMINISTRAR MI CUENTA, Cambiar mi contraseña
+Cambiar mi correo electrónico
+Administrar mis recibos
+Administrar nombres cortos de servicios
+Cambiar mi servicio primario
+Eliminar mi cuenta, Cambiar mi contraseña
+Cambiar mi correo electrónico
+Administrar mis recibos
+Administrar nombres cortos de servicios
+Cambiar mi servicio primario
+Eliminar mi cuenta, TRÁMITES Y SERVICIOS
+Descarga Múltiple
+Avisar fallas de luz
+Aclaración de mi recibo
+Revisión de mi medidor
+Incremento de carga
+Modificación de instalaciones existentes de la CFE
+Solicitar una libranza
+Consulta una solicitud
+Contáctanos, TRÁMITES Y SERVICIOS, Descarga Múltiple
+Avisar fallas de luz
+Aclaración de mi recibo
+Revisión de mi medidor
+Incremento de carga
+Modificación de instalaciones existentes de la CFE
+Solicitar una libranza
+Consulta una solicitud
+Contáctanos, Descarga Múltiple
+Avisar fallas de luz
+Aclaración de mi recibo
+Revisión de mi medidor
+Incremento de carga
+Modificación de instalaciones existentes de la CFE
+Solicitar una libranza
+Consulta una solicitud
+Contáctanos, CONSULTA TU RECIBO
+Actual e histórico, paga y domicilia
+ADMINISTRAR MIS RECIBOS
+Agrega recibos y recibe facturación electrónica
+PAGAR
+Realiza el pago de tu recibo de energía eléctrica
+MATA GARCIA JORGE
+HITA 900 1 ENTRE ESQ GUERNICA y 2DO. SECTOR CP. 66636 LAS PRADERAS DE APDCA APODACA N.L. N.L.
+MI ESPACIO CFECONTIGO
+ Servicio - 377930304481
+ Servicio - 377930406445
+ Servicio - 377980415178
+Monto a pagar por el período
+$9424
+Período de consumo:
+12 NOV 21 al 12 ENE 22
+Número de servicio:
+377 980 415 178
+Fecha límite de pago:
+28 ENE 22
+Estado del recibo:
+PAGADO
+  Pdf Otras Facturas
+ENE 2022
+Ver más...
+NOV 2021
+Ver más...
+SEP 2021
+Ver más...
+JUL 2021
+Ver más...
+MAY 2021
+Ver más...
+MAR 2021
+Ver más...
+Información importante
+- Corte a partir de 29 ENE 22.
+Gráfica Comparativa
+Mes de facturacion
+kWh, CONSULTA TU RECIBO
+Actual e histórico, paga y domicilia
+ADMINISTRAR MIS RECIBOS
+Agrega recibos y recibe facturación electrónica
+PAGAR
+Realiza el pago de tu recibo de energía eléctrica, CONSULTA TU RECIBO
+Actual e histórico, paga y domicilia, CONSULTA TU RECIBO
+Actual e histórico, paga y domicilia, , ADMINISTRAR MIS RECIBOS
+Agrega recibos y recibe facturación electrónica, ADMINISTRAR MIS RECIBOS
+Agrega recibos y recibe facturación electrónica, , PAGAR
+Realiza el pago de tu recibo de energía eléctrica, PAGAR
+Realiza el pago de tu recibo de energía eléctrica, , MATA GARCIA JORGE
+HITA 900 1 ENTRE ESQ GUERNICA y 2DO. SECTOR CP. 66636 LAS PRADERAS DE APDCA APODACA N.L. N.L.
+MI ESPACIO CFECONTIGO
+ Servicio - 377930304481
+ Servicio - 377930406445
+ Servicio - 377980415178
+Monto a pagar por el período
+$9424
+Período de consumo:
+12 NOV 21 al 12 ENE 22
+Número de servicio:
+377 980 415 178
+Fecha límite de pago:
+28 ENE 22
+Estado del recibo:
+PAGADO
+  Pdf Otras Facturas
+ENE 2022
+Ver más...
+NOV 2021
+Ver más...
+SEP 2021
+Ver más...
+JUL 2021
+Ver más...
+MAY 2021
+Ver más...
+MAR 2021
+Ver más...
+Información importante
+- Corte a partir de 29 ENE 22.
+Gráfica Comparativa
+Mes de facturacion
+kWh, MATA GARCIA JORGE
+HITA 900 1 ENTRE ESQ GUERNICA y 2DO. SECTOR CP. 66636 LAS PRADERAS DE APDCA APODACA N.L. N.L.
+MI ESPACIO CFECONTIGO, MATA GARCIA JORGE
+HITA 900 1 ENTRE ESQ GUERNICA y 2DO. SECTOR CP. 66636 LAS PRADERAS DE APDCA APODACA N.L. N.L., MI ESPACIO CFECONTIGO,  Servicio - 377930304481
+ Servicio - 377930406445
+ Servicio - 377980415178
+Monto a pagar por el período
+$9424
+Período de consumo:
+12 NOV 21 al 12 ENE 22
+Número de servicio:
+377 980 415 178
+Fecha límite de pago:
+28 ENE 22
+Estado del recibo:
+PAGADO
+  Pdf Otras Facturas
+ENE 2022
+Ver más...
+NOV 2021
+Ver más...
+SEP 2021
+Ver más...
+JUL 2021
+Ver más...
+MAY 2021
+Ver más...
+MAR 2021
+Ver más...,  Servicio - 377930304481
+ Servicio - 377930406445
+ Servicio - 377980415178
+Monto a pagar por el período
+$9424
+Período de consumo:
+12 NOV 21 al 12 ENE 22
+Número de servicio:
+377 980 415 178
+Fecha límite de pago:
+28 ENE 22
+Estado del recibo:
+PAGADO,  Servicio - 377930304481
+ Servicio - 377930406445
+ Servicio - 377980415178,  Servicio - 377930304481
+ Servicio - 377930406445
+ Servicio - 377980415178, Monto a pagar por el período
+$9424
+Período de consumo:
+12 NOV 21 al 12 ENE 22
+Número de servicio:
+377 980 415 178
+Fecha límite de pago:
+28 ENE 22
+Estado del recibo:
+PAGADO,   Pdf Otras Facturas
+ENE 2022
+Ver más...
+NOV 2021
+Ver más...
+SEP 2021
+Ver más...
+JUL 2021
+Ver más...
+MAY 2021
+Ver más...
+MAR 2021
+Ver más...,   Pdf Otras Facturas
+ENE 2022
+Ver más...
+NOV 2021
+Ver más...
+SEP 2021
+Ver más...
+JUL 2021
+Ver más...
+MAY 2021
+Ver más...
+MAR 2021
+Ver más...,   Pdf Otras Facturas
+ENE 2022
+Ver más...
+NOV 2021
+Ver más...
+SEP 2021
+Ver más...
+JUL 2021
+Ver más...
+MAY 2021
+Ver más...
+MAR 2021
+Ver más...,   Pdf Otras Facturas
+ENE 2022
+Ver más...
+NOV 2021
+Ver más...
+SEP 2021
+Ver más...
+JUL 2021
+Ver más...
+MAY 2021
+Ver más...
+MAR 2021
+Ver más..., , Ver más..., , Ver más..., , Ver más..., , Ver más..., , Ver más..., , Ver más..., Información importante
+- Corte a partir de 29 ENE 22.
+Gráfica Comparativa
+Mes de facturacion
+kWh, Información importante
+- Corte a partir de 29 ENE 22., - Corte a partir de 29 ENE 22., Gráfica Comparativa
+Mes de facturacion
+kWh, Mes de facturacion
+kWh, Mes de facturacion
+kWh]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinitions.MySpaceSteps.user_gets_account_section(MySpaceSteps.java:49)
+	at ✽.user gets account section(file:///C:/Users/jalopez5/eclipse-workspace/CucumberFramework/src/test/resources/features/MySpace.feature:15)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.MySpaceSteps.accounts_section_count_should_be(java.lang.Integer)">
+                <span>And accounts section count should be 3</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>My_Space_section_count
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:12:32 p. m.</td>
+<td>
+<a href="#" class="linked" test-id='28' id='33'>Given user is on My Space page</a>
+<div class="">
+<span class="badge badge-default">Space Page Feature.Space page title.Given user is on My Space page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:13:03 p. m.</td>
+<td>
+<a href="#" class="linked" test-id='28' id='43'>Then user gets account section</a>
+<div class="">
+<span class="badge badge-default">Space Page Feature.My Space section count.Then user gets account section</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.WebDriverException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.WebDriverException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:12:32 p. m.</td>
+<td>
+<a href="#" class="linked" test-id='28' id='36'>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Space Page Feature.Space page title.AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>ene. 31, 2022 01:09:31 p. m.</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>ene. 31, 2022 01:13:04 p. m.</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='60%'><b>3</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='40%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='71%'><b>15</b> steps passed</small></div>
+<div>
+<small data-tooltip='14%'><b>3</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Login page feature":52.18,"Space Page Feature":160.377
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>user</td>
+<td>Jorge</td>
+</tr>
+<tr>
+<td>appName</td>
+<td>Cucumber framework</td>
+</tr>
+<tr>
+<td>build</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 3,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 15,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 3,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
